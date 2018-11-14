@@ -74,8 +74,7 @@ function getWeather()
 // декодируем json
     $weather = json_decode($weather);
 
-    $answer = 'Текущая температура ' . ($weather->main->temp - 273.15) . '˚C давление ' . $weather->main->pressure . ' гПА влажность 
-    ' . $weather->main->humidity . '%';
+    $answer = 'Текущая температура ' . ($weather->main->temp - 273.15) . '˚C давление ' . $weather->main->pressure . ' гПА влажность ' . $weather->main->humidity . '%';
     return $answer;
 }
 
