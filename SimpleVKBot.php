@@ -1,6 +1,6 @@
 <?php
 
-
+//нужен полный доступ или около того
 $access_token = 'ваш токен';
 
 function getLongPollData()
