@@ -117,7 +117,7 @@ while (true) {
     //ищем новые сообщения
 
     foreach ($longpoll->updates as $event) {
-        if ($event[0] == 4 && $event[3] == 2000000003) { //ID беседы!!
+        if ($event[0] == 4 && $event[3] == 2000000003) { //ID беседы это 2000000000 + номер чата
             echo $event[5] . PHP_EOL;
             echo 'from' . $event[6]->from . PHP_EOL;
             echo $event[1] . PHP_EOL;//id msg
